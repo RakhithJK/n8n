@@ -353,9 +353,6 @@ export class Worker extends BaseCommand {
 				}
 			});
 		}
-
-		// Make sure that the process does not close
-		await new Promise(() => {});
 	}
 
 	async catch(error: Error) {
